@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
  <head>
   <meta charset="UTF-8">
@@ -11,13 +12,13 @@
     <header>
       <nav class="nav">
         <ul class="leftalign">
-          <li><a href="https://about.google/?fg=1&utm_source=google-GB&utm_medium=referral&utm_campaign=hp-header">About</a></li>
-          <li><a href="https://store.google.com/GB?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-GB">Store</a></li>
+          <li><a href="https://about.google/?fg=1&utm_source=google-GB&utm_medium=referral&utm_campaign=hp-header" id="about">About</a></li>
+          <li><a href="https://store.google.com/GB?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-GB" id="store">Store</a></li>
         </ul>
         <ul class="rightalign">
-          <li><a href="https://mail.google.com/mail/&ogbl">Gmail</a></li>
-          <li><a href="https://www.google.co.uk/imghp?hl=en&ogbl">Images</a></li>
-          <li><a id="none" href="https://www.google.co.uk/intl/en/about/products" title="apps" class="material-icons">apps</a id="none"></li>
+          <li><a href="https://mail.google.com/mail/&ogbl" id="gmail">Gmail</a></li>
+          <li><a href="https://www.google.co.uk/imghp?hl=en&ogbl" id="images">Images</a></li>
+          <li><a id="apps" href="https://www.google.co.uk/intl/en/about/products" title="apps" class="material-icons">apps</a></li>
           <li><a href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAmgQ">
             <button class="signin">Sign in</button></li>
         </ul>
@@ -25,32 +26,31 @@
     </header>
     
     <main class="center">
-      <img class="google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo">
+      <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google" class="center">
      </main>
     
-    <form>
-        <input  type="text" id="icons">
+    <div>
+        <input  class="searchbox" type="text" id="icons">
         <button type="button" class="micbutton"></button>
-        <button type="button" class="magbutton"></button>
-    </form>
+        <button type="button" class="magbutton" src="/home/monika/Desktop/the_odin_project/google-homepage/google-microphone.png"></button>
+    </div>
     
-    <ul class="center">
+    <div class="buttons">
       <button class="searchbutton">Google Search</button>
       <button class="searchbutton">I'm Feeling Lucky</button>
-    </ul>
+    </div>
     
     <footer>
-      <ul class="footerleft">
-        <li><a class="grey" href="https://www.google.com/intl/en_uk/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>
-        <li><a class="grey" href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a></li>
-        <li><a class="grey" href="https://google.com/search/howsearchworks/?fg=1">How Search works</a></li>
-        <ul class="footerright">
-          <li><a class="grey" href="https://policies.google.com/privacy?hl=en-GB&fg=1">Policies</a></li>
-          <li><a class="grey" href="https://policies.google.com/terms?hl=en-GB&fg=1">Terms</a></li>
-          <li><a class="grey" href="https://www.google.com/preferences?hl=en">Settings</a></li>
-          </ul>
+      <table style="width:100%">
+        <tr>
+          <td><a class="grey" id="ad" href="https://www.google.com/intl/en_uk/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></td>
+        <td><a class="grey" id="business" href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a></td>
+        <td><a class="grey" id="howsearchworks" href="https://google.com/search/howsearchworks/?fg=1">How Search works</a></td>
+        <td><a class="grey" id="policies" href="https://policies.google.com/privacy?hl=en-GB&fg=1">Policies</a></td>
+        <td><a class="grey" id="terms" href="https://policies.google.com/terms?hl=en-GB&fg=1">Terms</a></td>
+        <td><a class="grey" id="settings" href="https://www.google.com/preferences?hl=en">Settings</a></td>
+       </tr>
         </footer>
       </div>
     </body>
   </html>
-       
